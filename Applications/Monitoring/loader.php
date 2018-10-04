@@ -15,6 +15,6 @@
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 require_once __DIR__ .'/Config/Config.php';
-require_once __DIR__.'/Protocols/Statistic.php';
-require_once __DIR__.'/Bootstrap/StatisticProvider.php';
-require_once __DIR__.'/Bootstrap/StatisticWorker.php';
+require_once __DIR__.'/Protocols/MonitorStatistic.php';
+require_once __DIR__.'/Bootstrap/MonitorStatisticProvider.php';
+require_once __DIR__.'/Bootstrap/MonitorStatisticWorker.php';

@@ -204,10 +204,10 @@ class MonitorStatistic
 
 if(PHP_SAPI == 'cli' && isset($argv[0]) && $argv[0] == basename(__FILE__))
 {
-	StatisticClient::tick("TestModule", 'TestInterface');
+	MonitorStatisticClient::tick("TestModule", 'TestInterface');
 	usleep(rand(10000, 600000));
 	$success = rand(0,1);
 	$code = rand(300, 400);
 	$msg = 'This is a test message';
-	var_export(StatisticClient::report('TestModule', 'TestInterface', $success, $code, $msg));;
+	var_export(MonitorStatisticClient::report('TestModule', 'TestInterface', $success, $code, $msg));;
 }
