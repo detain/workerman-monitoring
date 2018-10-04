@@ -15,7 +15,7 @@ namespace Statistics;
 class Config
 {
 	// Data source Port, will send udp broadcast to this port to obtain ip, and then get statistics from this port with tcp protocol
-    public static $ProviderPort = 55858;
+    public static $ProviderPort = 55855;
     
 	// The administrator user name and the username and password are all empty strings.
     public static $adminName = '';

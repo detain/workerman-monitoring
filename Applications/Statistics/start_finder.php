@@ -19,7 +19,7 @@ use \Workerman\Worker;
 use \Workerman\WebServer;
 
 // recv udp broadcast
-$udp_finder = new Worker("Text://0.0.0.0:55858");
+$udp_finder = new Worker("Text://0.0.0.0:55855");
 $udp_finder->name = 'StatisticFinder';
 $udp_finder->transport = 'udp';
 $udp_finder->onMessage = function ($connection, $data)

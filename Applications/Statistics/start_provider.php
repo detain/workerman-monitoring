@@ -19,7 +19,7 @@ use \Workerman\Worker;
 use \Workerman\WebServer;
 
 // StatisticProvider
-$statistic_provider = new StatisticProvider("Text://0.0.0.0:55858");
+$statistic_provider = new StatisticProvider("Text://0.0.0.0:55855");
 $statistic_provider->name = 'StatisticProvider';
 
 // Run the runAll method if it is not started in the root directory

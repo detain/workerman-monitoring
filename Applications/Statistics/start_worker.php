@@ -19,7 +19,7 @@ use \Workerman\Worker;
 use \Workerman\WebServer;
 
 // StatisticWorker
-$statistic_worker = new StatisticWorker("Statistic://0.0.0.0:55656");
+$statistic_worker = new StatisticWorker("Statistic://0.0.0.0:55655");
 $statistic_worker->transport = 'udp';
 $statistic_worker->name = 'StatisticWorker';
 
