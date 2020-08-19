@@ -19,12 +19,12 @@ use \Workerman\Worker;
 use \Workerman\WebServer;
 
 // StatisticWorker
-$statistic_worker = new StatisticWorker("Statistic://0.0.0.0:55655");
+$statistic_worker = new StatisticWorker("MonitorStatistic://0.0.0.0:55655");
 $statistic_worker->transport = 'udp';
 $statistic_worker->name = 'StatisticWorker';
 
 // Run the runAll method if it is not started in the root directory
 if(!defined('GLOBAL_START'))
 {
-    Worker::runAll();
+	Worker::runAll();
 }
